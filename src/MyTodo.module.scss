@@ -1,0 +1,90 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIipYSxP.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIGpYSxP.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIupYSxP.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIWpYQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  .todo {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0, 128, 128, 0.11);
+    box-shadow: 0px 0px 3px rgba(0, 128, 128, 0.849);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    // font-family: 'Silkscreen';
+    font-family: 'Caveat';
+    font-size: 23px;
+    // transition: transform .1s;
+    
+    &:hover {
+        // transform: translate3d(-10px, 0px, 0px);
+        background-color: rgba(238, 255, 0, 0.11);
+    }
+}
+
+.changeBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 35px;
+        background-color: black;
+        top: -10px;
+        left: -20px;
+    }
+}
+
+.deleteBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.btnImg {
+    display: block;
+    
+    &:hover {
+        color: red;
+    }
+}

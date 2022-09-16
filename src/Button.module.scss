@@ -1,0 +1,11 @@
+.addBtn {
+    margin-bottom: 30px;
+    background-color: rgba(140, 0, 255, 0.11);
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    border-radius: 3px;
+    transition: background-color .1s;
+
+    &:hover {
+        background-color: rgba(255, 94, 0, 0.247);
+    }
+}

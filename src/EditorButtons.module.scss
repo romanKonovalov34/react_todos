@@ -1,0 +1,27 @@
+.changeBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.deleteBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.saveImg {
+    display: block;
+    
+    &:hover {
+        color: rgb(0, 17, 255);
+    }
+}
+
+.deleteImg {
+    display: block;
+
+    &:hover {
+        color: rgb(255, 0, 0);
+    }
+}
